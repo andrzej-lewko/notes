@@ -1,0 +1,120 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("egypt.png");
+	background-size: cover;
+}
+.up {
+	display: flex;
+}
+.up h1 {
+	margin: auto;
+}
+img {
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+}
+#down {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.add {
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	margin-top: 25px;
+	background-color: rgba(0, 0, 0, 0)
+}
+.add:hover {
+	transform: scale(105%);
+}
+.add img {
+	border: 1px solid #000;
+	border-radius: 5px;
+	width: 35px;
+	margin: 0;
+	padding: 0;
+}
+.button-area {
+    position: absolute; /* Pozycjonowanie absolutne względem .form */
+    bottom: 90px; /* Odstęp od dołu elementu .form */
+    left: 0; /* Aby wyśrodkować poziomo w .form */
+    right: 0; /* Aby wyśrodkować poziomo w .form */
+    width: 100%; /* Opcjonalnie, aby rozciągnąć na całą szerokość .form */
+    margin: auto; /* Centrowanie poziome */
+	
+}
+button {
+	width: 25px;
+	height: 25px;
+	margin: 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+}
+button:hover {
+	transform: scale(105%);
+}
+.form {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("form.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 432px;
+	padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+.input-area {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+}
+#title, #contentToEdit {
+    width: 70%; /* Pełna szerokość wewnątrz .input-area */
+    margin: 10px auto; /* Standardowy margines górny i dolny */
+    display: block; /* Ustawienie jako blokowe */
+    border: 1px solid #000;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	color: blue;
+}
+#title {
+	border-radius: 5px;
+	height: 30px;
+	/*margin-left: 100px;*/
+	font-family: 'Courier New', Courier, monospace;
+}
+#contentToEdit {
+	max-width: 350px;
+	min-height: 50px;
+	max-height: 229px;
+	overflow-y: hidden;
+}
+#save {
+	width: 80px;
+	border: 1px solid #000;
+	position: absolute;
+	right: 37px;
+}
+#reject {
+	width: 80px;
+	border: 1px solid #000;
+	position: absolute;
+	left: 40px;
+}
