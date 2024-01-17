@@ -63,7 +63,7 @@ button:hover {
 	transform: scale(105%);
 }
 .form {
-    display: block;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
