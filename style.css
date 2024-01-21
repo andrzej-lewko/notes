@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 html {
 	box-sizing: border-box;
 }
@@ -40,6 +42,41 @@ img {
 	width: 35px;
 	margin: 0;
 	padding: 0;
+}
+
+.note {
+	background-image: url("note.png");
+    background-size: cover;
+	opacity: 0.8;
+    width: 350px;
+    height: 230px;
+    margin: 20px 0 20px 28px;
+    border-radius: 20px;
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden; /* Zapobiega rozszerzaniu notatki, gdy treść jest zbyt długa */
+    position: relative; /* Pozycja względem rodzica */
+}
+.note h2 {
+	margin: 10px 0; /* Dodaj margines dla tytułu */
+    font-size: 20px; /* Dostosuj rozmiar czcionki */
+    color: #000; /* Dostosuj kolor czcionki */
+}
+
+.content {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	width: 262px;
+	height: 185px;
+	padding: 5px;
+	text-align: center;
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	
 }
 .button-area {
     position: absolute; /* Pozycjonowanie absolutne względem .form */
@@ -117,4 +154,14 @@ button:hover {
 	border: 1px solid #000;
 	position: absolute;
 	left: 40px;
+}
+
+@media (max-width: 768px) {
+   .form {
+	position: fixed;
+	top: 35%;
+   }
+   .note {
+	margin: 10 auto;
+   }
 }
